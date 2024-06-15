@@ -65,7 +65,7 @@ const getUsers = async (req, res) => {
          from: process.env.email,
          to: `${email}`,
          subject: "Reset Your Password",
-         text: `http://localhost:5173/changepassword/${buyer._id}`, };
+         text: `https://lab-system-bf900.web.app/changepassword/${buyer._id}`, };
        transporter.sendMail(mailOptions, function (error, info) {
          if (error) {
            console.log(error);
